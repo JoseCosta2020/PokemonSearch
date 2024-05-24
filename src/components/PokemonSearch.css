@@ -1,0 +1,29 @@
+.App-header {
+    background-color:gray;
+    display: flex;
+}
+
+.search-container {
+    background-color: white;
+}
+
+.PokemonSearch {
+    background-color: white;
+}
+
+.ListView {
+    background-color: red;
+    display:flex;
+    color: black;
+    height: 250px;
+}
+
+.button-large {
+    height: 50px;
+    width: 60px;
+    font-size: 30px;
+}
+
+.Increment {
+    justify-content:space-between;
+}

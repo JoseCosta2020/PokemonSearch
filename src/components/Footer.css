@@ -1,0 +1,77 @@
+.footer {
+    display: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: blue;
+}
+
+.container_ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+@media (max-width: 1500px) { 
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+    /*A diferença entre ul li  e  somente li é que a primeira diz nos que a parte em baixo só se aplica a todos os <li> dentro do ul enquanto o outro 
+    será para todos os <li>*/
+    ul li {
+        /*Diferença entre os icons do li*/
+        margin: 0 10px; /* Espaçamento entre os itens da lista */
+    }
+    .container_ul {
+        display:grid;
+        justify-content:center;
+        align-items:center;
+        width: 100%;
+    }
+    .icon-link {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1500px) { 
+    ul {
+        display:flex;
+        justify-content:center;
+        padding: 0;
+    }
+    /*A diferença entre ul li  e  somente li é que a primeira diz nos que a parte em baixo só se aplica a todos os <li> dentro do ul enquanto o outro 
+    será para todos os <li>*/
+    ul li {
+        /*Diferença entre os icons do li*/
+        margin: 0 10px; /* Espaçamento entre os itens da lista */
+    }
+
+    .center-div {
+        display: flex;
+        flex-grow: 1; /* Permite que o div central cresça para ocupar o espaço disponível */
+    }
+
+    .center-div2 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .center-div2 p {
+        margin: 5px;
+    }
+
+    .container_ul {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .icon-link {
+        font-size: 1.7rem;
+    }
+}

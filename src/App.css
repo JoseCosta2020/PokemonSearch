@@ -2,9 +2,42 @@
   text-align: center;
 }
 
+.App2 {
+  text-align: center;
+  height: 5vh; 
+  margin: 0 auto;
+}
+
+.full-height-button {
+  height: 100%;
+  border: 2px solid  cornflowerblue;
+  border-radius: 25px;
+  padding: 15px 32px;
+  width: 10%;
+  color: white;
+  background-color: cornflowerblue;
+}
+
+.PokemonNameImage {
+  display: 'flex';
+  color:black;
+  flex-direction: column;
+  margin: 0 auto; /* Centralizar dentro do container */
+  width: 100%;
+  background-color: aqua;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  margin: 0%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,19 +47,65 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color:white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: blue;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+.img {
+  opacity: 0.5;
+}
+/* Quero que o Slider apareca assim */
+.slick-dots li button:before {
+  font-size: 15px; /* Ajuste o tamanho dos pontos aqui */
+  color: black; /* Cor dos pontos */
+}
+.slick-dots li.slick-active button:before {
+  color: black; /* Cor dos pontos ativos */
+}
+/*###############################################################*/
+.pokemon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh; /* Ajuste conforme necessário para garantir que o fundo se estenda */
+  width: 100%;
+  text-align: center;
+  border-style: inset;
+  background-color: white;
+  background-size: cover; /* Faz com que a imagem de fundo cubra todo o contêiner */
+  background-position: center; /* Centraliza a imagem de fundo */
+  background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+}
+
+/* Opcionalmente, ajuste o h3 para garantir que não afete o layout */
+h3 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; 
+  margin: 0 auto; /* Centraliza dentro do container */
+  display: block;
+}
+
 
 @keyframes App-logo-spin {
   from {
